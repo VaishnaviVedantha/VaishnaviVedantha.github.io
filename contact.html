@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Vaishnavi Vedantha</title>
+    <!-- Include Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            font-family: Arial, sans-serif;
+            color: white;
+            background: url('landscape.jpg') no-repeat center center fixed;
+            background-size: cover;
+        }
+        .overlay {
+            background-color: rgba(0, 0, 0, 0.7); /* Increased opacity for better visibility */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+            animation: fadeInOverlay 1s ease-out;
+        }
+        .modal-content {
+            background-color: rgba(44, 44, 44, 0.8); /* Adjusted opacity for transparency */
+            padding: 30px;
+            border: 1px solid #888;
+            width: 40%;
+            position: relative;
+            text-align: left;
+            color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+            transform: translateY(20px);
+            animation: slideUp 1s ease-out forwards;
+        }
+        .modal-content h1 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        .modal-content hr {
+            border: 0;
+            border-top: 1px solid #888;
+            margin: 20px 0;
+            width: 80%;
+            align-self: center;
+        }
+        .contact-info {
+            margin-top: 20px;
+        }
+        .contact-info p {
+            margin: 10px 0;
+        }
+        .contact-info h3 {
+            margin: 10px 0;
+        }
+        .contact-info p + p {
+            margin-top: 30px; /* Extra spacing between sections */
+        }
+        .contact-icons {
+            display: flex;
+            gap: 10px;
+            margin-top: 20px;
+            justify-content: center;
+        }
+        .contact-icons a {
+            color: white;
+            text-decoration: none;
+            font-size: 24px;
+            transition: transform 0.3s, color 0.3s;
+        }
+        .contact-icons a:hover {
+            color: #ccc;
+            transform: scale(1.2); /* Zoom effect on hover */
+        }
+        .close-btn {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+            font-size: 24px;
+            color: white;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+        .close-btn:hover {
+            color: #ccc;
+        }
+        @keyframes fadeInOverlay {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+        @keyframes slideUp {
+            from {
+                transform: translateY(20px);
+                opacity: 0;
+            }
+            to {
+                transform: translateY(0);
+                opacity: 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="overlay">
+        <div class="modal-content">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h1>Get in Touch</h1>
+            <hr>
+            <div class="contact-info">
+                <h3><strong>Location</strong></h3>
+                <p>Bengaluru, Karnataka India.</p>
+                <h3><strong>Email</strong></h3>
+                <p>vaishnavivedanha18@gmail.com</p>
+            </div>
+            <div class="contact-icons">
+                <a href="https://www.linkedin.com/in/vaishnavi-vedantha-a0b5a41b3/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/VaishnaviVedantha" target="_blank"><i class="fab fa-github"></i></a>
+            </div>
+        </div>
+    </div>
+    <script>
+        function closeModal() {
+            document.querySelector('.overlay').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
