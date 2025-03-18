@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Vaishnavi Vedantha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="modal-content scrollable">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h1 class="fade-in">About Me</h1>
+            <hr class="fade-in delay-1">
+
+            <p class="fade-in delay-2">👋 Hello there!</p>
+        
+            <p class="fade-in delay-3">
+                Welcome to my portfolio! I'm <strong>Vaishnavi Vedantha</strong>, a passionate and detail-oriented <strong>Software Engineer</strong> with expertise in 
+                <strong>full-stack development</strong>.
+            </p>
+
+            <p class="fade-in delay-4">
+                I specialize in building <strong>scalable, high-performance applications</strong> using:
+            </p>
+
+            <ul class="fade-in delay-5">
+                <li><strong>Frontend:</strong> ReactJS, HTML, CSS, JavaScript</li>
+                <li><strong>Backend:</strong> NodeJS, Java, C#</li>
+                <li><strong>Databases:</strong> MySQL</li>
+                <li><strong>Version Control & DevOps:</strong> GitHub</li>
+            </ul>
+
+            <p class="fade-in delay-6"><strong>💡 Key Projects:</strong></p>
+            
+            <ul class="fade-in delay-7">
+                <li><strong>📌 Student & Faculty Attendance Application:</strong> Developed a full-stack system using <em>ReactJS, NodeJS, MySQL</em> to track attendance via QR codes.</li>
+                <li><strong>📌 Faculty Recruitment Application:</strong> Built a structured hiring system with RESTful APIs and a 3-tier architecture.</li>
+                <li><strong>📌 E-commerce & Movie Booking Systems:</strong> Designed seamless web & mobile applications for smooth user interaction.</li>
+            </ul>
+
+            <p class="fade-in delay-8"><strong>📜 Certifications & Achievements:</strong></p>
+
+            <ul class="fade-in delay-9">
+                <li>🏅 Python Course Certification – JSS Academy of Technical Education</li>
+                <li>☁️ Cloud Computing Certification – AWS Coursera</li>
+                <li>💻 Frontend Development (HTML) Certification – Great Learning</li>
+            </ul>
+
+            <p class="fade-in delay-10"><strong>🎯Work Experience:</strong></p>
+
+            <ul class="fade-in delay-11">
+                <li>✔️ Worked on <strong>full-stack development projects</strong> in ReactJS, NodeJS, and MySQL.</li>
+                <li>✔️ Also have experience as a <strong>Network Engineer</strong>, ensuring seamless connectivity and troubleshooting technical issues.</li>
+            </ul>
+
+            <p class="fade-in delay-12"><strong>🎶 Hobbies:</strong> Cooking 🍽️ | Playing the Keyboard 🎹 | Gardening 🌱</p>
+
+            <p class="fade-in delay-13">Feel free to explore my work and <strong>connect with me</strong> for exciting discussions and collaborations!</p>
+        </div>
+    </div>
+
+    <script>
+        function closeModal() {
+            document.querySelector('.modal-content').classList.add('slide-out');
+            setTimeout(() => {
+                window.location.href = "index.html";
+            }, 600); // Matches the transition duration
+        }
+    </script>
+</body>
+<footer>
+    <p class="fade-in delay-5">&copy; 2025 Vaishnavi Vedantha. All Rights Reserved.</p>
+</footer>
+</html>

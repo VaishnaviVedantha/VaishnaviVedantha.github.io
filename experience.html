@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Vaishnavi Vedantha</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="overlay">
+        <div class="modal-content scrollable slide-up">
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <h1 class="fade-in">Work Experience</h1>
+            <hr class="fade-in delay-1">
+
+            <!-- Software Engineering Experience -->
+            <div class="experience-section slide-in-left delay-2">
+                <h2 class="yellow-heading">Software Engineer</h2>
+                <p class="yellow-subheading"><strong>Company:</strong></p> IBAB, Bengaluru (March 2024 - December 2024)
+                <p class="yellow-subheading"><strong>Experience:</strong></p> 10 months
+                <p class="yellow-subheading"><strong>Technologies:</strong></p> ReactJS, NodeJS, MySQL, GitHub, VS Code
+                
+                <div class="experience-item fade-in delay-3">
+                    <h4 class="yellow-subheading"><strong>Student and Faculty Attendance Application:</strong></h4>
+                    <p>Developed a full-stack system with QR-based attendance tracking and real-time subject-wise dashboards for faculty.</p>
+                    <ul>
+                        <li>Followed Agile/Scrum methodology for iterative development.</li>
+                        <li>Implemented Object-Oriented Programming (OOP) concepts:</li>
+                        <ul>
+                            <li><strong>Inheritance:</strong> Reused logic across APIs to reduce redundancy.</li>
+                            <li><strong>Polymorphism:</strong> Allowed dynamic responses for different user roles (students & faculty).</li>
+                        </ul>
+                    </ul>
+                </div>
+
+                <div class="experience-item fade-in delay-4">
+                    <h4 class="yellow-subheading"><strong>Faculty Recruitment Application:</strong></h4> 
+                    <p>Built a structured hiring system using ReactJS, NodeJS, and MySQL.</p>
+                    <ul>
+                        <li>Developed RESTful APIs for secure data exchange.</li>
+                        <li>Applied OOP principles:</li>
+                        <ul>
+                            <li><strong>Abstraction:</strong> Simplified backend logic using API endpoints.</li>
+                            <li><strong>Polymorphism:</strong> Customized dashboards for applicants & reviewers.</li>
+                        </ul>
+                    </ul>
+                </div>
+            </div>
+
+            <hr class="fade-in delay-5">
+
+            <!-- Network Engineer Experience -->
+            <div class="experience-section slide-in-right delay-6">
+                <h2 class="yellow-heading">Network Engineer</h2>
+                <p class="yellow-subheading"><strong>Company:</strong></p> NTT Ltd, Bengaluru (August 2022 - October 2023)
+                <p class="yellow-subheading"><strong>Experience:</strong></p> 1 Year 3 months
+                <p class="yellow-subheading"><strong>Technologies:</strong></p> Xshell, MS Excel, ITSM, Cisco vManage, Cisco Meraki
+
+                <ul>
+                    <li>Monitored and supported network operations, ensuring minimal downtime for enterprise banking systems.</li>
+                    <li>Used Xshell to log into routers and diagnose network issues.</li>
+                    <li>Managed incident reports via ITSM and coordinated with bank branches to troubleshoot connectivity problems.</li>
+                    <li>Raised service tickets for network link failures and collaborated with providers for resolution.</li>
+                    <li>Performed root cause analysis and suggested improvements to minimize network downtime.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function closeModal() {
+            document.querySelector('.modal-content').classList.add('slide-out');
+            setTimeout(() => {
+                window.location.href = "index.html";
+            }, 600);
+        }
+    </script>
+</body>
+<footer>
+    <p class="fade-in delay-5">&copy; 2025 Vaishnavi Vedantha. All Rights Reserved.</p>
+</footer>
+</html>
