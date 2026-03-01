@@ -327,20 +327,22 @@ footer {
 
 /* ----- PHOTO LEFT ----- */
 .about-photo {
-    display: flex;
-    justify-content: center;
+    width: 300px;              /* Fixed circle size */
+    aspect-ratio: 1 / 1;
+    border-radius: 50%;
+    overflow: hidden;          /* Important: crops image inside circle */
+    border: 5px solid #0FB6C6;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
 }
 
 .about-photo img {
     width: 100%;
-    max-width: 300px;
-    aspect-ratio: 1/1;
-    border-radius: 50%;
-    border: 5px solid #0FB6C6;
-    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-    object-fit: cover;
-    object-position: center top;
+    height: 100%;              /* Make image fill container */
+    object-fit: cover;         /* Crop nicely */
+    object-position: center;   /* Perfect center */
+    display: block;
 }
+  
 
 /* ----- TEXT RIGHT ----- */
 .about-text {
@@ -1468,6 +1470,7 @@ h1, h2, h3 {
     .cert-card h3 { font-size: 1.2rem; }
     .cert-card p { font-size: 0.9rem; }
 }
+
 
 
 
